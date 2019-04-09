@@ -1,9 +1,6 @@
-const Queue = require('./queue')
-
 class Monarchy {
 
   constructor(firstRuler){
-    firstRuler.childrenByAge = new Queue()
     this.firstRuler = firstRuler // root of the family tree
     this.nameToPerson = new Map()
     this.nameToPerson.set(this.firstRuler.name, firstRuler)
@@ -16,8 +13,7 @@ class Monarchy {
       // lords and all descendants of lords are ignored
       const namedPerson = this.nameToPerson.get(name)
       if (namedPerson){
-        person.childrenByAge = new Queue()
-        namedPerson.childrenByAge.add(person)
+        namedPerson.children.push(person)
       }
     }
   }
@@ -38,7 +34,7 @@ class Monarchy {
     if (person.isAlive){
       console.log(person.name)
     }
-    for (let child of person.childrenByAge){
+    for (let child of person.children){
       this.printSuccession(child)
     }
   }
