@@ -1,0 +1,22 @@
+{
+  "name": "monarchy",
+  "version": "1.0.0",
+  "description": "solution for House Mormont chain of ascension contest at FSA",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/absreim/monarchy.git"
+  },
+  "author": "Brook Li",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/absreim/monarchy/issues"
+  },
+  "homepage": "https://github.com/absreim/monarchy#readme",
+  "devDependencies": {
+    "jest": "^24.7.1"
+  }
+}

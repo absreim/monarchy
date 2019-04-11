@@ -1,4 +1,4 @@
-class Monarchy {
+export default class Monarchy {
 
   constructor(firstRuler){
     this.firstRuler = firstRuler // root of the family tree
