@@ -16,6 +16,7 @@ class Monarchy {
       const namedPerson = this.nameToPerson.get(name)
       if (namedPerson){
         namedPerson.children.push(person)
+        this.nameToPerson.set(person.name, person)
       }
     }
   }

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "solution for House Mormont chain of ascension contest at FSA",
   "scripts": {
-    "test": "jest --verbose"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,6 @@
   "homepage": "https://github.com/absreim/monarchy#readme",
   "devDependencies": {
     "capture-stdout": "^1.0.0",
-    "jest": "^24.7.1"
+    "mocha": "^6.1.3"
   }
 }
