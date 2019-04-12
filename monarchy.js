@@ -1,4 +1,4 @@
-export default class Monarchy {
+class Monarchy {
 
   constructor(firstRuler){
     this.firstRuler = firstRuler // root of the family tree
@@ -6,7 +6,9 @@ export default class Monarchy {
     this.nameToPerson.set(this.firstRuler.name, firstRuler)
   }
 
-  // finds person w/ given name value and adds a new Person as a child
+  // Finds person w/ given name value and adds a new Person as a child.
+  // Order of age of children for any person
+  // is the order the children are born.
   birth(name, person){
     if (person.isLady){
       // lords are irrelevant to the order of succession
@@ -39,3 +41,5 @@ export default class Monarchy {
     }
   }
 }
+
+module.exports = Monarchy
